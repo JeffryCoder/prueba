@@ -11,8 +11,14 @@
         <h2>Klk chulo</h2>
       </article>
     </section>
-    
+    <script async src="https://telegram.org/js/telegram-widget.js?9" data-telegram-login="LatinDevUnitedBot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+<script type="text/javascript">
+  function onTelegramAuth(user) {
+    alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+  }
+</script>
     <footer>Todos los derechos reservados &copy; JeffryCoder 2020</footer>
+    
   </body>
 
 </html>
